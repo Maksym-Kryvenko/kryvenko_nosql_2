@@ -1,0 +1,2 @@
+# Semantic search for scientific articles
+The goal of this task is to be able to explain how vector search differs from full-text search and when each of them is better. You will need to independently build a pipeline from raw texts to a working semantic search - with embeddings, index and filtering, consciously choosing a text chunking strategy and similarity metric depending on the model. You will implement a hybrid search via RRF and explain why it outperforms each of the component methods separately.
