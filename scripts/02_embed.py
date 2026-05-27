@@ -21,7 +21,7 @@ all_embeddings = []
 model.eval()
 with torch.no_grad():
     for i in tqdm(range(0, len(data), 100)):
-        text_batch = data.iloc[i:i+10]["to_embed"].values.tolist()
+        text_batch = data.iloc[i:i+100]["to_embed"].values.tolist()
         inputs = tokenizer(text_batch, padding=True, truncation=True,
                                 return_tensors="pt", return_token_type_ids=False, max_length=512)
         output = model(**inputs)
@@ -40,4 +40,4 @@ try:
     np.save("embeddings/embeddings.npy", all_embeddings)
     print(f"Embeddings successfully saved to embeddings/embeddings.npy")
 except:
-    print(f"Failed to save the file {e}")
+    print("Failed to save the file")
