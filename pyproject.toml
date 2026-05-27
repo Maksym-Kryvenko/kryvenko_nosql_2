@@ -9,7 +9,7 @@ dependencies = [
     "kaggle>=2.2.0",
     "numpy<2",
     "pandas<3",
-    "pinecone-client>=6.0.0",
+    "pinecone>=6.0.0",
     "pyarrow>=24.0.0",
     "python-dotenv>=1.2.2",
     "rank-bm25>=0.2.2",

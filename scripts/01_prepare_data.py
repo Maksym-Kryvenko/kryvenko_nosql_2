@@ -36,7 +36,7 @@ def format_authors(paper: dict) -> str:
 
 records = []
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    for line in tqdm(f, desc="Читаємо датасет"):
+    for line in tqdm(f, desc="Reading dataset"):
         if len(records) >= MAX_RECORDS:
             break
         line = line.strip()
