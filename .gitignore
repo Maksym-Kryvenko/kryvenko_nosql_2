@@ -11,3 +11,11 @@ wheels/
 
 # Credentials
 .env
+
+# Ignore md except README
+*.md
+!README.md
+
+# local files
+data/*
+embeddings/*
